@@ -1,0 +1,166 @@
+:root {
+  --clr-accent: hsl(75, 94%, 57%);
+  --clr-base: hsl(0, 0%, 100%);
+  --clr-muted: hsl(0, 0%, 80%);
+
+  --clr-primary-700: hsl(0, 0%, 20%);
+  --clr-primary-800: hsl(0, 0%, 12%);
+  --clr-primary-900: hsl(0, 0%, 8%);
+
+  --ff-base: "Inter", sans-serif;
+
+  --fw-regular: 400;
+  --fw-bold: 600;
+  --fw-bolder: 700;
+}
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+  text-decoration: none;
+}
+
+/* general styles */
+body {
+  --content-padding: 1.5rem;
+  --content-spacing: 1rem;
+
+  background-color: var(--clr-primary-900);
+  font-family: var(--ff-base);
+  font-size: 0.825rem;
+  color: var(--clr-base);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  max-width: 375px;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+p {
+  color: var(--clr-muted);
+}
+
+/* profile styles */
+
+.profile {
+  background-color: var(--clr-primary-800);
+  border-radius: 0.825rem;
+  padding: 1.75rem 2rem;
+}
+
+.profile__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  gap: var(--content-spacing);
+}
+
+.profile__image {
+  width: 30%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile__title {
+  font-size: 1.5rem;
+  font-weight: var(--fw-regular);
+}
+
+.profile__sub {
+  font-weight: var(--fw-bold);
+  color: var(--clr-accent);
+}
+
+.profile__social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  width: 100%;
+}
+
+.profile__social-links li {
+  background-color: var(--clr-primary-700);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-weight: var(--fw-bolder);
+}
+
+.profile__social-links li:is(:hover, :focus) {
+  background-color: var(--clr-accent);
+  color: var(--clr-primary-900);
+}
