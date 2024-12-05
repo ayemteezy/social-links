@@ -153,6 +153,7 @@ p {
   padding: 0.5rem;
   border-radius: 0.5rem;
   font-weight: var(--fw-bolder);
+  cursor: pointer;
 }
 
 .profile__social-links li:is(:hover, :focus) {
