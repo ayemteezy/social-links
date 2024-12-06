@@ -85,7 +85,7 @@ ul li {
 /* general styles */
 body {
   --content-padding: 1.5rem;
-  --content-spacing: 1rem;
+  --content-spacing: 1.25rem;
 
   background-color: var(--clr-primary-900);
   font-family: var(--ff-base);
