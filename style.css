@@ -85,7 +85,7 @@ ul li {
 /* general styles */
 body {
   --content-padding: 1.5rem;
-  --content-spacing: 1.5rem;
+  --content-spacing: 1.75rem;
 
   background-color: var(--clr-primary-900);
   font-family: var(--ff-base);
@@ -122,6 +122,12 @@ p {
   text-align: center;
 
   gap: var(--content-spacing);
+}
+
+.profile__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
 }
 
 .profile__image {
